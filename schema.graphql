@@ -1,9 +1,13 @@
 type Query
 {
-  pixels:[Pixel]
+  pixels: [Pixel]
 }
 
 type Pixel {
   id: ID!
   color: String!
+}
+
+type Mutation {
+   updatePixel(id: ID!, color: String!): [Pixel]
 }
